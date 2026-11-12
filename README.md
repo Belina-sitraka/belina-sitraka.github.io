@@ -1,3 +1,4 @@
+ HEAD
 # Portfolio — Indie Game Developer
 
 Portfolio statique (HTML5 / CSS3 / JavaScript vanilla), sans framework ni étape de build. Thème « Dark Gaming / Cinematic UI », entièrement responsive.
@@ -113,3 +114,7 @@ La galerie (grille + lightbox avec flèches clavier) apparaît automatiquement. 
 - Animations désactivées automatiquement pour les visiteurs ayant activé « réduire les animations » ; les particules se mettent en pause hors écran.
 - Accessibilité : lien d'évitement, focus visible, modale avec fermeture clavier (Échap), attributs ARIA, contrastes élevés.
 - SEO de base : titre, description, Open Graph, données structurées Person (JSON-LD), `robots.txt`, `sitemap.xml`.
+
+# belina-sitraka.github.io
+Personal Game Developer Portfolio
+>>>>>>> 97ce6621d7a5264a25314959c1beb1da471d42b7
