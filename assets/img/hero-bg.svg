@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Silhouette d'un guerrier encapuchonné face à une lune rouge au-dessus de ruines">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#090B10"/>
+      <stop offset=".55" stop-color="#140c14"/>
+      <stop offset="1" stop-color="#2a0e12"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#D62828" stop-opacity=".55"/>
+      <stop offset=".5" stop-color="#D62828" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#D62828" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blade" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#4169E1" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#4169E1" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="2"/></filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+
+  <!-- étoiles -->
+  <g fill="#fff" opacity=".55">
+    <rect x="120" y="90" width="2" height="2"/><rect x="310" y="180" width="2" height="2"/>
+    <rect x="470" y="70" width="3" height="3"/><rect x="640" y="140" width="2" height="2"/>
+    <rect x="780" y="60" width="2" height="2"/><rect x="900" y="200" width="2" height="2"/>
+    <rect x="1010" y="110" width="3" height="3"/><rect x="1180" y="60" width="2" height="2"/>
+    <rect x="1320" y="170" width="2" height="2"/><rect x="1450" y="90" width="3" height="3"/>
+    <rect x="210" y="260" width="2" height="2"/><rect x="560" y="290" width="2" height="2"/>
+    <rect x="1250" y="290" width="2" height="2"/><rect x="1530" y="240" width="2" height="2"/>
+  </g>
+
+  <!-- lune -->
+  <circle cx="1130" cy="270" r="330" fill="url(#moonGlow)"/>
+  <circle cx="1130" cy="270" r="118" fill="#D62828"/>
+  <circle cx="1100" cy="245" r="22" fill="#a51d1d"/>
+  <circle cx="1168" cy="300" r="30" fill="#a51d1d"/>
+  <circle cx="1150" cy="222" r="12" fill="#a51d1d"/>
+
+  <!-- montagnes lointaines -->
+  <path d="M0 640 L120 560 L230 610 L380 500 L520 600 L640 540 L790 640 L900 570 L1040 620 L1200 520 L1360 610 L1480 550 L1600 620 V900 H0Z" fill="#12121b"/>
+  <!-- ruines / tour -->
+  <g fill="#0c0d14">
+    <path d="M250 700 V470 h18 v-30 h22 v30 h18 v-30 h22 v30 h18 V700Z"/>
+    <path d="M330 700 V540 h16 v-20 h16 v20 h16 V700Z" opacity=".9"/>
+    <rect x="272" y="520" width="14" height="38" fill="#2a0e12"/>
+    <rect x="304" y="560" width="14" height="30" fill="#D62828" opacity=".35"/>
+  </g>
+  <path d="M0 720 L140 690 L300 730 L460 700 L640 740 L820 710 L1000 745 L1200 715 L1400 750 L1600 720 V900 H0Z" fill="#0b0c12"/>
+
+  <!-- brume -->
+  <rect y="640" width="1600" height="140" fill="#D62828" opacity=".05" filter="url(#soft)"/>
+
+  <!-- personnage : guerrier encapuchonné -->
+  <g transform="translate(1010 330)">
+    <ellipse cx="120" cy="515" rx="150" ry="18" fill="#000" opacity=".5"/>
+    <!-- lueur de lame -->
+    <circle cx="238" cy="150" r="130" fill="url(#blade)"/>
+    <!-- épée -->
+    <g>
+      <path d="M232 500 L240 40 L248 500Z" fill="#cfd8ff"/>
+      <path d="M240 40 L248 500 L240 500Z" fill="#4169E1"/>
+      <rect x="214" y="498" width="52" height="8" fill="#1a1d29"/>
+    </g>
+    <!-- cape -->
+    <path d="M120 150 C40 190 10 330 0 505 L240 505 C228 330 200 200 120 150Z" fill="#0a0b11"/>
+    <path d="M120 150 C80 200 70 340 66 505 L96 505 C100 340 110 220 120 150Z" fill="#14161f"/>
+    <!-- corps -->
+    <path d="M86 205 C100 185 140 185 154 205 L170 400 L70 400Z" fill="#101219"/>
+    <!-- capuche -->
+    <path d="M120 60 C70 62 60 130 76 175 C96 190 144 190 164 175 C180 130 170 62 120 60Z" fill="#0a0b11"/>
+    <path d="M96 118 C106 108 134 108 144 118 L146 148 C136 160 104 160 94 148Z" fill="#000"/>
+    <!-- yeux -->
+    <rect x="104" y="128" width="12" height="5" fill="#D62828"/>
+    <rect x="126" y="128" width="12" height="5" fill="#D62828"/>
+    <!-- bras tenant l'épée -->
+    <path d="M150 230 L232 290 L226 308 L142 262Z" fill="#101219"/>
+    <circle cx="236" cy="300" r="10" fill="#0a0b11"/>
+    <!-- écharpe -->
+    <path d="M86 196 C110 212 140 212 156 196 L160 214 C140 230 104 230 82 214Z" fill="#D62828" opacity=".85"/>
+  </g>
+
+  <!-- braises -->
+  <g fill="#D62828" opacity=".8">
+    <rect x="820" y="600" width="3" height="3"/><rect x="900" y="540" width="2" height="2"/>
+    <rect x="1000" y="620" width="3" height="3"/><rect x="1300" y="580" width="2" height="2"/>
+    <rect x="1400" y="640" width="3" height="3"/><rect x="760" y="680" width="2" height="2"/>
+  </g>
+  <rect width="1600" height="900" fill="#090B10" opacity=".18"/>
+</svg>

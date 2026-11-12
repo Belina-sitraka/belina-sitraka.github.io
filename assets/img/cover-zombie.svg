@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration conceptuelle — Zombie Survival : vue du dessus, viseur et horde">
+  <defs>
+    <radialGradient id="vig" cx=".5" cy=".5" r=".75">
+      <stop offset=".35" stop-color="#090B10" stop-opacity="0"/>
+      <stop offset="1" stop-color="#090B10" stop-opacity=".95"/>
+    </radialGradient>
+    <radialGradient id="flash" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#4169E1" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#4169E1" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" fill="none" stroke="#fff" stroke-opacity=".05"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="720" fill="#0c0f15"/>
+  <rect width="1280" height="720" fill="url(#grid)"/>
+  <!-- routes / débris vue du dessus -->
+  <g fill="#10141c">
+    <rect x="0" y="300" width="1280" height="120"/>
+    <rect x="560" y="0" width="120" height="720"/>
+  </g>
+  <g stroke="#2a3040" stroke-width="3" stroke-dasharray="26 22" opacity=".7">
+    <path d="M0 360H1280"/><path d="M620 0V720"/>
+  </g>
+  <g fill="#161a24">
+    <rect x="90" y="80" width="200" height="140"/><rect x="900" y="60" width="260" height="170"/>
+    <rect x="130" y="500" width="240" height="130"/><rect x="860" y="500" width="200" height="150"/>
+  </g>
+  <!-- taches de sang -->
+  <g fill="#D62828" opacity=".35">
+    <ellipse cx="760" cy="300" rx="46" ry="22"/><ellipse cx="500" cy="430" rx="34" ry="16"/>
+    <ellipse cx="880" cy="420" rx="22" ry="12"/>
+  </g>
+  <!-- zombies (vue du dessus) -->
+  <g fill="#1b2a22" stroke="#3f6b52" stroke-width="2">
+    <circle cx="860" cy="250" r="22"/><circle cx="930" cy="330" r="22"/>
+    <circle cx="820" cy="430" r="22"/><circle cx="960" cy="450" r="22"/>
+    <circle cx="420" cy="250" r="22"/><circle cx="360" cy="360" r="22"/>
+    <circle cx="450" cy="470" r="22"/>
+  </g>
+  <g fill="#3f6b52">
+    <rect x="852" y="236" width="16" height="6"/><rect x="922" y="316" width="16" height="6"/>
+    <rect x="812" y="416" width="16" height="6"/><rect x="952" y="436" width="16" height="6"/>
+    <rect x="412" y="236" width="16" height="6"/><rect x="352" y="346" width="16" height="6"/>
+    <rect x="442" y="456" width="16" height="6"/>
+  </g>
+  <!-- tir -->
+  <circle cx="640" cy="360" r="160" fill="url(#flash)"/>
+  <path d="M640 360 L1010 300" stroke="#fff" stroke-opacity=".5" stroke-width="2" stroke-dasharray="4 8"/>
+  <!-- joueur -->
+  <circle cx="640" cy="360" r="24" fill="#d9deea"/>
+  <rect x="648" y="352" width="46" height="9" fill="#2a3040"/>
+  <circle cx="640" cy="360" r="9" fill="#4169E1"/>
+  <!-- viseur -->
+  <g stroke="#D62828" stroke-width="3" fill="none" transform="translate(1010 300)">
+    <circle r="22"/><path d="M-36 0H-10M10 0H36M0 -36V-10M0 10V36"/>
+  </g>
+  <rect width="1280" height="720" fill="url(#vig)"/>
+</svg>

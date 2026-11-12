@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BELINA Fitahintsoa — Indie Game Developer from Madagascar</title>
+  <meta name="description" content="Portfolio of BELINA Fitahintsoa, indie game developer and game designer from Madagascar. 2D games, interactive worlds and original gameplay.">
+  <meta name="author" content="BELINA Fitahintsoa Sitraka Ismael">
+  <meta name="theme-color" content="#090B10">
+  <link rel="canonical" href="https://example.com/">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BELINA Fitahintsoa — Indie Game Developer">
+  <meta property="og:description" content="I build interactive worlds, create gameplay experiences and bring original game concepts to life.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "BELINA Fitahintsoa Sitraka Ismael",
+    "jobTitle": "Indie Game Developer",
+    "address": { "@type": "PostalAddress", "addressLocality": "Alasora", "addressCountry": "MG" },
+    "email": "mailto:belinafitahintsoaisitraka.ismael@gmail.com"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo" aria-label="BF">
+        <span class="logo-mark">BF</span><span class="logo-text">FITAHINTSOA</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <a href="#about" class="nav-link"><i>01</i><span data-i18n="nav.about">About</span></a>
+        <a href="#projects" class="nav-link"><i>02</i><span data-i18n="nav.projects">Projects</span></a>
+        <a href="#skills" class="nav-link"><i>03</i><span data-i18n="nav.skills">Skills</span></a>
+        <a href="#education" class="nav-link"><i>04</i><span data-i18n="nav.journey">Journey</span></a>
+        <a href="#contact" class="nav-link nav-cta" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="header-tools">
+        <div class="lang-switch" role="group" aria-label="Language" data-i18n-aria="menu.lang">
+          <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ 01 HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-art" aria-hidden="true">
+        <img src="assets/img/hero-bg.svg" alt="" width="1600" height="900" fetchpriority="high">
+      </div>
+      <canvas class="particles" id="particles" aria-hidden="true"></canvas>
+      <div class="hero-fade" aria-hidden="true"></div>
+
+      <div class="container hero-content">
+        <p class="hero-badge reveal-load" style="--d:.1s"><span class="dot"></span><span data-i18n="hero.badge">GAME DEVELOPER FROM MADAGASCAR</span></p>
+        <h1 class="hero-title">
+          <span class="line"><span class="line-inner" style="--d:.25s">BELINA</span></span>
+          <span class="line"><span class="line-inner" style="--d:.4s">FITAHINTSOA</span></span>
+          <span class="line role"><span class="line-inner" style="--d:.6s">INDIE GAME DEVELOPER</span></span>
+        </h1>
+        <p class="hero-lead reveal-load" style="--d:.85s" data-i18n="hero.lead">I build interactive worlds, create gameplay experiences and bring original game concepts to life.</p>
+        <div class="hero-actions reveal-load" style="--d:1s">
+          <a href="#projects" class="btn btn-primary"><span data-i18n="hero.cta1">EXPLORE MY PROJECTS</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <a href="#contact" class="btn btn-ghost" data-i18n="hero.cta2">CONTACT ME</a>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scroll down">
+        <span data-i18n="hero.scroll">SCROLL</span><i></i>
+      </a>
+    </section>
+
+    <!-- ============ 02 ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow" data-i18n="about.eyebrow">01 / ABOUT</span>
+          <h2 data-i18n="about.title">ABOUT THE DEVELOPER</h2>
+        </header>
+
+        <div class="about-top">
+          <figure class="portrait reveal">
+            <div class="portrait-frame">
+              <img src="assets/img/portrait.jpg" alt="Portrait of BELINA Fitahintsoa" data-i18n-alt="about.photoAlt" width="900" height="1006" loading="lazy">
+            </div>
+            <figcaption>
+              <span class="dot" aria-hidden="true"></span>
+              <span>BELINA Fitahintsoa · Alasora, Madagascar</span>
+            </figcaption>
+          </figure>
+
+          <div class="about-text reveal" style="--i:1">
+            <p class="lead" data-i18n="about.lead">I'm a computer science student passionate about programming and video game creation. I'm particularly interested in game design, gameplay, world-building and 2D game development.</p>
+            <p data-i18n="about.p2">My goal is to progressively develop my technical and artistic skills in order to create original gaming experiences.</p>
+          </div>
+        </div>
+
+        <div class="about-cards">
+          <article class="card reveal" style="--i:0">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+            </span>
+            <h3 data-i18n="about.profile.h">Profile</h3>
+            <p data-i18n="about.profile.p">Indie game developer, game designer and computer science student, based in Madagascar.</p>
+          </article>
+          <article class="card reveal" style="--i:1">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/></svg>
+            </span>
+            <h3 data-i18n="about.academic.h">Academic path</h3>
+            <p data-i18n="about.academic.p">Bachelor's, year 2 (Licence 2) — Computer Technology.</p>
+          </article>
+          <article class="card reveal" style="--i:2">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="11" rx="5"/><path d="M7 10v5M4.5 12.5h5"/><circle cx="16" cy="11.5" r="1"/><circle cx="18.5" cy="14" r="1"/></svg>
+            </span>
+            <h3 data-i18n="about.interests.h">Interests</h3>
+            <p data-i18n="about.interests.p">Programming, game design, gameplay, world-building and 2D games.</p>
+          </article>
+          <article class="card reveal" style="--i:3">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1"/></svg>
+            </span>
+            <h3 data-i18n="about.goals.h">Goals</h3>
+            <p data-i18n="about.goals.p">Grow my technical and artistic skills to create original experiences.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03 PROJECTS ============ -->
+    <section class="section section-dark" id="projects">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow" data-i18n="projects.eyebrow">02 / PROJECTS</span>
+          <h2 data-i18n="projects.title">MY PROJECTS</h2>
+          <p class="section-sub" data-i18n="projects.sub">Two worlds, two approaches to gameplay. Cover visuals are conceptual illustrations; real screenshots will be added as development progresses.</p>
+        </header>
+
+        <!-- Project 01 -->
+        <article class="project reveal" id="project-cendres">
+          <a class="project-cover" href="#project-cendres" data-open="cendres" data-i18n-aria="projects.view" data-aria-suffix="LES CENDRES DE NÉRA" aria-label="VIEW PROJECT: LES CENDRES DE NÉRA">
+            <img src="assets/img/cover-cendres.svg" alt="Conceptual illustration for Les Cendres de Néra" data-i18n-alt="projects.cendres.coverAlt" loading="lazy" width="1280" height="720">
+            <span class="project-index">01</span>
+            <span class="status status-dev" data-i18n="projects.statusDev">IN DEVELOPMENT</span>
+            <span class="cover-hover" data-i18n="projects.view">VIEW PROJECT</span>
+          </a>
+          <div class="project-body">
+            <p class="project-genre" data-i18n="projects.cendres.genre">ACTION RPG 2D</p>
+            <h3>LES CENDRES DE NÉRA</h3>
+            <p data-i18n="projects.cendres.desc">A 2D Action RPG in dark, detailed pixel art. The player explores, fights in real time and progresses through a linear story whose ending changes depending on their choices.</p>
+            <dl class="meta">
+              <div><dt data-i18n="projects.lbl.genre">Genre</dt><dd data-i18n="projects.cendres.vGenre">2D Action RPG</dd></div>
+              <div><dt data-i18n="projects.lbl.art">Art style</dt><dd data-i18n="projects.cendres.vArt">Dark Detailed Pixel Art</dd></div>
+              <div><dt data-i18n="projects.lbl.combat">Combat</dt><dd data-i18n="projects.cendres.vCombat">Real time</dd></div>
+              <div><dt data-i18n="projects.lbl.engine">Engine</dt><dd>Godot Engine</dd></div>
+              <div><dt data-i18n="projects.lbl.status">Status</dt><dd data-i18n="projects.cendres.vStatus">In Development</dd></div>
+            </dl>
+            <ul class="tags" id="tags-cendres">
+              <li>Exploration</li><li>Combat</li><li>Progression</li><li>Storytelling</li><li>Multiple endings</li>
+            </ul>
+            <button class="btn btn-primary" data-open="cendres"><span data-i18n="projects.view">VIEW PROJECT</span> <span class="arrow" aria-hidden="true">→</span></button>
+          </div>
+        </article>
+
+        <!-- Project 02 -->
+        <article class="project project-alt reveal" id="project-zombie">
+          <a class="project-cover" href="#project-zombie" data-open="zombie" data-i18n-aria="projects.view" data-aria-suffix="ZOMBIE SURVIVAL" aria-label="VIEW PROJECT: ZOMBIE SURVIVAL">
+            <img src="assets/img/cover-zombie.svg" alt="Conceptual illustration for Zombie Survival" data-i18n-alt="projects.zombie.coverAlt" loading="lazy" width="1280" height="720">
+            <span class="project-index">02</span>
+            <span class="status status-concept" data-i18n="projects.statusConcept">CONCEPT / DEVELOPMENT</span>
+            <span class="cover-hover" data-i18n="projects.view">VIEW PROJECT</span>
+          </a>
+          <div class="project-body">
+            <p class="project-genre" data-i18n="projects.zombie.genre">TOP-DOWN 2D ZOMBIE SURVIVAL SHOOTER</p>
+            <h3>ZOMBIE SURVIVAL</h3>
+            <p data-i18n="projects.zombie.desc">A top-down survival shooter set in a dark, post-apocalyptic world. Aim with the mouse, move in every direction and hold off hordes of zombies.</p>
+            <dl class="meta">
+              <div><dt data-i18n="projects.lbl.genre">Genre</dt><dd data-i18n="projects.zombie.vGenre">Top-Down 2D Shooter</dd></div>
+              <div><dt data-i18n="projects.lbl.artDir">Art direction</dt><dd data-i18n="projects.zombie.vArtDir">Dark, post-apocalyptic</dd></div>
+              <div><dt data-i18n="projects.lbl.modes">Modes</dt><dd data-i18n="projects.zombie.vModes">Solo · co-op to be developed</dd></div>
+              <div><dt data-i18n="projects.lbl.engine">Engine</dt><dd>Godot Engine</dd></div>
+              <div><dt data-i18n="projects.lbl.status">Status</dt><dd data-i18n="projects.zombie.vStatus">Concept / Development</dd></div>
+            </dl>
+            <ul class="tags" id="tags-zombie">
+              <li>Hordes</li><li>Mouse aiming</li><li>Progressive difficulty</li><li>Progression</li>
+            </ul>
+            <button class="btn btn-primary" data-open="zombie"><span data-i18n="projects.view">VIEW PROJECT</span> <span class="arrow" aria-hidden="true">→</span></button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 04 SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow" data-i18n="skills.eyebrow">03 / SKILLS</span>
+          <h2 data-i18n="skills.title">TECHNICAL SKILLS</h2>
+        </header>
+
+        <div class="skills-grid">
+          <article class="skill-group reveal" style="--i:0">
+            <header>
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="11" rx="5"/><path d="M7 10v5M4.5 12.5h5"/><circle cx="16" cy="11.5" r="1"/><circle cx="18.5" cy="14" r="1"/></svg>
+              </span>
+              <h3 data-i18n="skills.game">GAME DEVELOPMENT</h3>
+            </header>
+            <ul>
+              <li><svg viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5"/></svg><span>Godot Engine</span></li>
+              <li><svg viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg><span>GDScript</span></li>
+              <li><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 12h18M12 3v18"/></svg><span data-i18n="skills.g2d">2D Game Development</span></li>
+              <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg><span data-i18n="skills.mech">Game Mechanics</span></li>
+              <li><svg viewBox="0 0 24 24"><path d="M3 21V8l5-4 5 4v13M13 21V12l4-3 4 3v9M3 21h18"/></svg><span>Level Design</span></li>
+              <li><svg viewBox="0 0 24 24"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/></svg><span>Game Design</span></li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal" style="--i:1">
+            <header>
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
+              </span>
+              <h3 data-i18n="skills.web">WEB DEVELOPMENT</h3>
+            </header>
+            <ul>
+              <li><svg viewBox="0 0 24 24"><path d="M4 3l1.6 17L12 22l6.4-2L20 3z"/></svg><span>HTML5</span></li>
+              <li><svg viewBox="0 0 24 24"><path d="M4 3l1.6 17L12 22l6.4-2L20 3z"/><path d="M8 8h8l-.5 5-3.5 1.2L8.5 13"/></svg><span>CSS3</span></li>
+              <li><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 10v5a2 2 0 01-4 0M16 14c.5-1 3-1.2 3 .5 0 2-3 1.5-3 3.5"/></svg><span>JavaScript</span></li>
+              <li><svg viewBox="0 0 24 24"><rect x="2" y="5" width="14" height="10" rx="1"/><rect x="16" y="9" width="6" height="10" rx="1"/></svg><span data-i18n="skills.responsive">Responsive Web Design</span></li>
+              <li><svg viewBox="0 0 24 24"><path d="M3 3h8v8H3zM13 13h8v8h-8zM13 3h8v6h-8zM3 13h8v8H3z"/></svg><span>UI/UX Design</span></li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal" style="--i:2">
+            <header>
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/></svg>
+              </span>
+              <h3 data-i18n="skills.cs">COMPUTER SCIENCE</h3>
+            </header>
+            <ul>
+              <li><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M8 7l3 9M16 7l-3 9"/></svg><span data-i18n="skills.algo">Algorithms</span></li>
+              <li><svg viewBox="0 0 24 24"><path d="M4 17l6-6-6-6M12 19h8"/></svg><span data-i18n="skills.prog">Programming</span></li>
+              <li><svg viewBox="0 0 24 24"><path d="M3 5h18M3 12h12M3 19h8"/><circle cx="19" cy="15" r="3"/></svg><span data-i18n="skills.pm">IT project management</span></li>
+              <li><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 00-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 005.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg><span data-i18n="skills.solve">Technical problem solving</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 05 EDUCATION & EXPERIENCE ============ -->
+    <section class="section section-dark" id="education">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow" data-i18n="edu.eyebrow">04 / JOURNEY</span>
+          <h2 data-i18n="edu.title">EDUCATION &amp; EXPERIENCE</h2>
+        </header>
+
+        <div class="journey">
+          <div class="journey-col reveal">
+            <h3 class="col-title"><span>▍</span><b data-i18n="edu.academic">ACADEMIC BACKGROUND</b></h3>
+            <ol class="timeline">
+              <li>
+                <span class="node" aria-hidden="true"></span>
+                <h4 data-i18n="edu.l2">Bachelor's, year 2 (Licence 2) — Computer Technology</h4>
+                <p data-i18n="edu.l2p">Currently studying.</p>
+              </li>
+            </ol>
+
+            <h3 class="col-title"><span>▍</span><b data-i18n="edu.certs">CERTIFICATIONS</b></h3>
+            <ol class="timeline">
+              <li><span class="node" aria-hidden="true"></span><h4 data-i18n="edu.bac">Baccalauréat, A2 series</h4></li>
+              <li><span class="node" aria-hidden="true"></span><h4 data-i18n="edu.web">Web Manager training completion certificate</h4></li>
+              <li><span class="node" aria-hidden="true"></span><h4 data-i18n="edu.honorIt">Certificate of honor and merit in IT (Web)</h4></li>
+              <li><span class="node" aria-hidden="true"></span><h4 data-i18n="edu.honorCom">Certificate of honor and merit in communication</h4></li>
+            </ol>
+          </div>
+
+          <div class="journey-col reveal" style="--i:1">
+            <h3 class="col-title"><span>▍</span><b data-i18n="edu.exp">EXPERIENCE</b></h3>
+            <ol class="timeline">
+              <li>
+                <span class="node node-blue" aria-hidden="true"></span>
+                <h4>IMTECH INFO</h4>
+                <p data-i18n="edu.imtech">Internship in IT maintenance and technical support.</p>
+              </li>
+              <li>
+                <span class="node node-blue" aria-hidden="true"></span>
+                <h4>NETPROWEB</h4>
+                <p data-i18n="edu.netpro">Internship in network administration and systems maintenance.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 06 CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow" data-i18n="contact.eyebrow">05 / CONTACT</span>
+          <h2 data-i18n="contact.title">LET'S CREATE SOMETHING GREAT.</h2>
+          <p class="section-sub" data-i18n="contact.sub">Have a project, an idea or an opportunity? Let's connect and build something amazing.</p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <ul class="info-list">
+              <li>
+                <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+                <div><small data-i18n="contact.email">Email</small><a href="mailto:belinafitahintsoaisitraka.ismael@gmail.com" id="emailLink">belinafitahintsoaisitraka.ismael@gmail.com</a></div>
+              </li>
+              <li>
+                <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21l1.600-4.800A8.500 8.500 0 1 1 8 19.400z"/><path d="M9 9c0 3 3 6 6 6l1.500-1.500-2-1-1 .8c-1-.4-2-1.400-2.400-2.400l.8-1-1-2z"/></svg></span>
+                <div><small data-i18n="contact.whatsapp">WhatsApp</small><a href="https://wa.me/261384239179" target="_blank" rel="noopener noreferrer">+261 38 42 391 79</a></div>
+              </li>
+              <li>
+                <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.500 7-12a7 7 0 00-14 0c0 5.500 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+                <div><small data-i18n="contact.location">Location</small><span>Alasora, Madagascar</span></div>
+              </li>
+            </ul>
+
+            <div class="socials" role="group" aria-label="Social links" data-i18n-aria="contact.socials">
+              <!-- Facebook : lien de RECHERCHE par défaut. Remplace-le par l'URL exacte de ton profil
+                   (ex. https://www.facebook.com/ton.profil) — voir README. -->
+              <a href="https://www.facebook.com/search/top?q=Fitahintsoa%20Hebi" target="_blank" rel="noopener noreferrer" aria-label="Facebook — Fitahintsoa Hebi">
+                <svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg>
+                <span>Fitahintsoa Hebi</span>
+              </a>
+              <a href="https://www.tiktok.com/@Hebiiff" target="_blank" rel="noopener noreferrer" aria-label="TikTok — @Hebiiff">
+                <svg viewBox="0 0 24 24"><path d="M14 3v11.500a3.500 3.500 0 1 1-3.500-3.500M14 3c.3 2.500 2 4.200 4.500 4.500"/></svg>
+                <span>@Hebiiff</span>
+              </a>
+              <a href="https://wa.me/261384239179" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp — +261 38 42 391 79">
+                <svg viewBox="0 0 24 24"><path d="M3 21l1.600-4.800A8.500 8.500 0 1 1 8 19.400z"/><path d="M9 9c0 3 3 6 6 6l1.500-1.500-2-1-1 .8c-1-.4-2-1.400-2.400-2.400l.8-1-1-2z"/></svg>
+                <span>WhatsApp</span>
+              </a>
+            </div>
+
+            <a href="assets/cv/CV_BELINA_Fitahintsoa.pdf" class="btn btn-ghost btn-block" id="cvBtn" download>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 11l5 5 5-5M4 20h16"/></svg>
+              <span data-i18n="contact.cv">DOWNLOAD CV</span>
+            </a>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate style="--i:1">
+            <div class="field">
+              <label for="name" data-i18n="contact.name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required minlength="2" maxlength="80">
+              <span class="error" data-error-for="name"></span>
+            </div>
+            <div class="field">
+              <label for="email" data-i18n="contact.email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required maxlength="120">
+              <span class="error" data-error-for="email"></span>
+            </div>
+            <div class="field">
+              <label for="subject" data-i18n="contact.subject">Subject</label>
+              <input type="text" id="subject" name="subject" maxlength="120">
+              <span class="error" data-error-for="subject"></span>
+            </div>
+            <div class="field">
+              <label for="message" data-i18n="contact.message">Message</label>
+              <textarea id="message" name="message" rows="5" required minlength="10" maxlength="2000"></textarea>
+              <span class="error" data-error-for="message"></span>
+            </div>
+            <!-- Honeypot anti-spam -->
+            <div class="hp" aria-hidden="true"><label>Ne pas remplir<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="submitBtn"><span data-i18n="contact.send">SEND MESSAGE</span> <span class="arrow" aria-hidden="true">→</span></button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p data-i18n="footer.copy">© 2026 BELINA Fitahintsoa Sitraka Ismael — Indie Game Developer</p>
+      <a href="#hero" class="to-top" data-i18n="footer.top">BACK TO TOP ↑</a>
+    </div>
+  </footer>
+
+  <!-- ============ PROJECT MODAL ============ -->
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" tabindex="-1">
+      <button class="modal-close" data-close aria-label="Close" id="modalCloseBtn">×</button>
+      <div class="modal-cover"><img id="modalCover" src="" alt=""></div>
+      <div class="modal-body">
+        <p class="project-genre" id="modalGenre"></p>
+        <h3 id="modalTitle"></h3>
+        <span class="status" id="modalStatus"></span>
+        <div id="modalDesc" class="modal-desc"></div>
+        <dl class="meta" id="modalMeta"></dl>
+        <h4 class="gallery-title" id="modalGalleryTitle">GALLERY</h4>
+        <div class="gallery" id="modalGallery"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lb-close" data-lb-close aria-label="Close image">×</button>
+    <button class="lb-nav lb-prev" data-lb-prev aria-label="Previous image">‹</button>
+    <img id="lbImg" src="" alt="">
+    <button class="lb-nav lb-next" data-lb-next aria-label="Next image">›</button>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/i18n.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
